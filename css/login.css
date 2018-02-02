@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #F1F2F2;
+  font-family: Open Sans;
+}
+.container {
+  width: 450px;
+  height: auto;
+  margin: 8em auto;
+  background: #fff;
+  position: relative;
+}
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-box {
+  background: #E6E7E8;
+  color: #444;
+  padding: 18px;
+  text-align: center;
+  font-size: 1.4em;
+  width: 50%;
+  height: 65px;
+  float: left;
+}
+.container > a {
+  text-decoration: none;
+  color: #555;
+  display: block;
+  background: #E6E7E8;
+}
+.common {
+  display: block;
+  width: 80%;
+  margin: 18px auto;
+  height: 50px;
+  color: #555;
+}
+input[type="submit"] {
+  border: none;
+  background: #E8491D;
+  color: #f2f2f2;
+  font-family: Open Sans;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.container button {
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  z-index: 100;
+  outline: none;
+}
+.signup-box {
+  width: 100%;
+  margin: auto;
+  padding: 10px 0px;
+}
+.login-box {
+  width: 100%;
+  margin: auto;
+  padding: 75px 0px 15px 0px;
+  display: none;
+}
+a.top-box {
+  cursor: pointer;
+}
+.login-box a {
+  text-decoration: none;
+  color: #888;
+  text-align: right;
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+.one:active {
+  background-color: #f2f2f2;
+  color: #000;
+}

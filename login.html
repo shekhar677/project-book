@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+  <title>LogInSignUp</title>
+  <script>
+    function switch_div(sign, log, show) {
+      var x = document.getElementById(sign);
+      var y = document.getElementById(log);
+
+      if (show) {
+        x.style.display = 'block';
+        y.style.display = 'none';
+      } else {
+        x.style.display = 'none';
+        y.style.display = 'block';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <a onclick="switch_div('sign', 'log', true)" class="top-box" id="sign-click">Sign up</a>
+    <a onclick="switch_div('sign', 'log', false)" class="top-box" id="log-click">login</a>
+    <form action="#" method="post">
+      <div class="signup-box clearfix" id="sign">
+        <input class="common" type="email" name="email" placeholder="Email">
+        <input class="common" type="text" name="username" placeholder="Username">
+        <input class="common" type="password" name="password" placeholder="Password">
+        <input class="common" type="submit" value="Sign Up">
+        <p class="common">By signing up you agree to our Terms of service</p>
+      </div>
+      <div class="login-box" id="log">
+        <input class="common" type="email" name="email" placeholder="Email or Username">
+        <input class="common" type="password" name="password" placeholder="Password">
+        <input class="common" type="submit" value="login">
+        <a href="#">forgot password ?</a>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
