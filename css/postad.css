@@ -49,6 +49,9 @@ label {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+.desc {
+  height: 80px;
+}
 .btn-submit {
   margin: 5px 13px;
   width: 170px;
