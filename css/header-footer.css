@@ -1,0 +1,83 @@
+/* default common styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background: #E5E5E5;
+}
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+}
+.btn {
+  color: #f2f2f2;
+  background: coral;
+  padding: 12px 15px;
+}
+.btn:hover {
+  background: #E8491D;
+}
+.btn:active {
+  background: #b12701;
+}
+/* default common style ends */
+
+/* header styles */
+.logo-img {
+  width: 160px;
+}
+.branding{
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  position: relative;
+  top: 0;
+  z-index: 1;
+}
+.branding .logo {
+  float: left;
+  margin-left: 4em;
+}
+.branding .logo a {
+  background: none;
+}
+.branding .goto {
+  float: right;
+  margin-right: 20px;
+  /* transform: translate(0%, 15%); */
+}
+.branding .goto a i {
+  padding-right: 5px;
+}
+/* header style ends */
+
+
+/* footer style */
+footer {
+  background: #272727;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1em;
+  color: #888;
+  font-weight: 700;
+  width: 100%;
+  padding: 20px;
+}
+footer .content-left img {
+  width: 12%;
+}
+/* footer style ends */

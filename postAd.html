@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/postad.css">
+  <link rel="stylesheet" href="css/header-footer.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <title>Post Your Ad</title>
+</head>
+<body>
+
+  <div class="branding clearfix" id="brand">
+    <div class="logo">
+      <a href="index.html"><img class="logo-img" src="images/bookbank.png" alt="BookBank"></a>
+    </div>
+    <div class="goto">
+      <a class="ad btn" href="postAd.html">Post Free Ad</a>
+      <a class="btn" href="login.html"><i class="fa fa-user" aria-hidden="true"></i><span>My Account</span></a>
+    </div>
+  </div>
+  <!-- branding ends -->
+
+  <section id="header-top">
+    <div class="overlay"></div>
+    <div class="nav vertical-center">
+      <div class="tagline" id="tag">
+        <h1>Post Your Free Ad</h1>
+        <!-- <p>sell your books</p> -->
+      </div>
+  </section>
+      <!-- tagline ends -->
+
+  <section id="ad">
+    <div class="container">
+      <form action="" class="clearfix">
+        <div class="row-md">
+          <label>Title of Book</label>
+          <input type="text" name="title" class="form">
+        </div>
+
+        <div class="row-md-2">
+          <label>Book Category</label>
+          <select name="" class="form">
+            <option value="novel">Kanpur</option>
+            <option value="novel">Lucknow</option>
+            <option value="novel">Ghaziabad</option>
+            <option value="novel" selected>Agra</option>
+            <option value="novel">Varanasi</option>
+            <option value="novel">Meerut</option>
+            <option value="novel">Allahabad</option>
+            <option value="novel">Bareilly</option>
+            <option value="novel">Aligarh</option>
+            <option value="novel">Moradabad</option>
+            <option value="novel">Faizabad</option>
+          </select>
+        </div>
+
+        <div class="row-md-2">
+          <label for="">Sub-category</label>
+          <select name="" class="form">
+            <option value="novel">Kanpur</option>
+            <option value="novel">Lucknow</option>
+            <option value="novel">Ghaziabad</option>
+            <option value="novel" selected>Agra</option>
+            <option value="novel">Varanasi</option>
+            <option value="novel">Meerut</option>
+            <option value="novel">Allahabad</option>
+            <option value="novel">Bareilly</option>
+            <option value="novel">Aligarh</option>
+            <option value="novel">Moradabad</option>
+            <option value="novel">Faizabad</option>
+          </select>
+        </div>
+
+        <div class="row-md">
+          <label for="">Book Description</label>
+          <textarea name="name" rows="8" cols="80" class="form desc"></textarea>
+        </div>
+
+        <div class="row-md">
+          <label for="">Price of the Book</label>
+          <input type="text" class="form">
+        </div>
+
+        <div class="row-md">
+          <label for="">City</label>
+          <input type="text" class="form">
+        </div>
+
+        <!-- choose image file -->
+        <div class="image-select">
+          <div class="row-md-4 file">
+            <label for="">select image</label>
+            <input type="file" name="image2" multiple data-show-upload="false" data-show-caption="true">
+          </div>
+
+          <div class="row-md-4 file">
+            <label for="">select image</label>
+            <input type="file" name="image2" multiple data-show-upload="false" data-show-caption="true">
+          </div>
+
+          <div class="row-md-4 file">
+            <label for="">select image</label>
+            <input type="file" name="image3" multiple data-show-upload="false" data-show-caption="true">
+          </div>
+
+          <div class="row-md-4 file">
+            <label for="">select image</label>
+            <input type="file" name="image4" multiple data-show-upload="false" data-show-caption="true">
+          </div>
+        </div>
+        <!-- choose image files ends -->
+
+        <input type="submit" value="Upload My Ad" class="btn btn-submit">
+
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="content-left">
+      <img class="logo-img" src="images/bookbank.png" alt="BookBank">
+    </div>
+  </footer>
+
+</body>
+</html>
