@@ -1,0 +1,32 @@
+body {
+  color: #888;
+}
+.shadow {
+  box-shadow: 3px 8px 30px #999;
+}
+.login-content {
+  width: 40%;
+  padding: 50px;
+  margin: 100px auto;
+  background: #fff;
+}
+.login-content h1 {
+  margin: 10px;
+  text-align: center;
+}
+.forgot {
+  float: right;
+}
+a.forgot, a.new-account {
+  display: inline-block;
+  margin: 13px;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+  color: #888;
+}
+a.forgot:hover, a.new-account:hover {
+  color: #E8491D;
+}
