@@ -30,3 +30,34 @@ a.forgot, a.new-account {
 a.forgot:hover, a.new-account:hover {
   color: #E8491D;
 }
+
+
+/* media query.................... */
+
+@media all and (max-width: 991px) {
+  .login-content {
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .login-content {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .login-content {
+    width: 85%;
+    padding: 30px 10px;
+    margin: 100px auto;
+  }
+}
+
+@media all and (max-width: 412px) {
+  .login-content {
+    width: 95%;
+    padding: 30px 5px;
+    margin: 100px auto;
+  }
+}

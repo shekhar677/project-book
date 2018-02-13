@@ -15,7 +15,7 @@ body {
 .search-default {
   font-family: 'Ubuntu', sans-serif;
   color: #666;
-  font-size: 1em;
+  font-size: 1rem;
   height: 40px;
   padding: 10px;
   outline: none;
@@ -65,12 +65,12 @@ section#header-top .nav div.tagline {
   margin-bottom: 60px;
 }
 section#header-top .nav div.tagline h1 {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 300;
   padding: 10px;
 }
 section#header-top .nav div.tagline p {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-weight: 200;
 }
 section#header-top .nav .search {
@@ -116,7 +116,7 @@ section#header-top .nav .search a i {
 #categories .row .col .desc {
   overflow: hidden;
   white-space: nowrap;
-  font-size: 1em;
+  font-size: 1rem;
   color: #888;
   padding: 12px 13px;
 }
@@ -138,7 +138,7 @@ section#recent {
 section#recent h1 {
   text-align: center;
   color: #888;
-  font-size: 2em;
+  font-size: 2rem;
   padding: 50px;
 }
 section#recent .content .box {
@@ -165,7 +165,7 @@ section#recent .box .image img {
 }
 section#recent .box .title {
   margin-top: 10px;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   color: #888;
   text-align: center;
 }
@@ -192,4 +192,133 @@ section#recent .content .pagination ul {
 }
 section#recent .content .pagination ul li {
   display: inline-block;
+}
+
+
+/* media query.................... */
+
+@media all and (max-width: 991px) {
+  #categories .row .col .desc {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+}
+
+@media all and (max-width: 768px) {
+
+  .col {
+    width: 40%;
+    margin: 10px;
+    overflow: hidden;
+  }
+
+  #categories .row .col .img img {
+    width: 50px;
+  }
+  #categories .row .col .desc {
+    font-size: 0.8rem;
+    color: #888;
+    padding: 10px 12px;
+  }
+
+  section#recent .content .box {
+    width: 30%;
+    margin: 13px;
+  }
+  section#recent .box .title {
+    font-size: 0.8rem;
+  }
+
+  section#header-top .nav div.tagline h1 {
+    font-size: 2.5rem;
+  }
+  section#header-top .nav div.tagline p {
+    font-size: 1rem;
+  }
+  section#header-top .search-default {
+    font-size: 0.8rem;
+    padding: none;
+  }
+  section#header-top a {
+    font-size: 0.8rem;
+  }
+  section#header-top .btn {
+    padding: 13px 15px;
+  }
+
+  section#recent a {
+    font-size: 0.8rem;
+  }
+
+}
+
+@media all and (max-width: 575px) {
+
+  .row {
+    padding: 25px 0px 0 0px;
+  }
+  .col {
+    width: 50%;
+    float: left;
+    margin: 10px 0;
+  }
+  section#header-top {
+    height: 400px;
+  }
+  section#header-top .nav div.tagline p {
+    display: none;
+  }
+  section#header-top .vertical-center {
+    position: relative;
+    top: 25%;
+    transform: translate(0%, -25%);
+  }
+  section#header-top .nav div.tagline {
+    margin-bottom: 10px;
+  }
+  section#header-top .nav div.tagline h1 {
+    font-size: 2rem;
+  }
+  section#header-top .nav .search .select-container {
+    display: block;
+    width: 70%;
+    margin: auto;
+  }
+  section#header-top .nav .search .select {
+    width: 95%;
+  }
+  section#header-top .nav .search input[type="text"] {
+    width: 70%;
+    margin: 5px auto;
+    padding: 5px 21px;
+    display: block;
+  }
+  section#header-top .btn {
+    padding: 13px 15px;
+    width: 70%;
+  }
+  section#recent .content .box {
+    width: 40%;
+  }
+
+}
+
+@media all and (max-width: 412px) {
+
+  .col {
+    width: 80%;
+    float: none;
+    margin: 10px 0;
+  }
+  section#header-top .nav .search .select-container i {
+    display: none;
+  }
+  section#header-top .nav .search .select-container {
+    padding-left: 0px;
+    border: 0px;
+  }
+  section#recent .content .box {
+    width: 80%;
+  }
+
 }
