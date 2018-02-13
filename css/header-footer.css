@@ -18,7 +18,7 @@ body {
 a {
   display: inline-block;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1rem;
   cursor: pointer;
   position: relative;
   transition: 0.2s;
@@ -38,7 +38,8 @@ a {
 
 /* header styles */
 .logo-img {
-  width: 160px;
+  width: 190px;
+  padding: 6px;
 }
 .branding{
   width: 100%;
@@ -71,13 +72,58 @@ footer {
   background: #272727;
   text-align: center;
   line-height: 30px;
-  font-size: 1em;
+  font-size: 1rem;
   color: #888;
   font-weight: 700;
   width: 100%;
   padding: 20px;
 }
 footer .content-left img {
-  width: 12%;
+  width: 120px;
 }
 /* footer style ends */
+
+
+
+/* media query.................... */
+
+@media all and (max-width: 991px) {
+  /* nothing to change at all */
+}
+@media all and (max-width: 768px) {
+
+  .branding .goto .btn {
+    padding: 10px 13px;
+  }
+  .branding .goto a {
+    font-size: 0.8rem;
+  }
+  footer .content-left img {
+    width: 100px;
+  }
+
+}
+@media all and (max-width: 575px) {
+
+  .branding .logo {
+    float: none;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .branding .goto {
+    float: none;
+    text-align: center;
+    margin: 0;
+  }
+  .branding .goto .btn {
+    padding: 10px 40px;
+  }
+
+}
+@media all and (max-width: 412px) {
+  .branding .goto a {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+  }
+}
