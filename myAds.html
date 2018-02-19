@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="text/css" rel="stylesheet" href="css/header-footer.css">
+  <link type="text/css" rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <title>My Ads</title>
+</head>
+<body>
+  <div class="branding clearfix" id="brand">
+    <div class="logo">
+      <a href="index.html"><img class="logo-img" src="images/bookbank.png" alt="BookBank"></a>
+    </div>
+    <div class="goto">
+      <a class="ad btn" href="postAd.html">Post Free Ad</a>
+      <div class="group">
+
+        <!-- <div class="parent">
+          <a class="btn" href="login.html"><i class="fa fa-user" aria-hidden="true"></i><span>My Account</span></a>
+        </div> -->
+
+        <!-- to change view from BUTTON to DROPDOWN BUTTON just comment any one of above and below DIV which has PARENT CLASS
+      ...........................................................................................................................
+    .............................................................................................................................
+  ............................................................................................................................... -->
+
+        <div class="parent">
+          <ul>
+            <li>
+              <a class="btn option" href="login.html"><span>Shekhar Gupta</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+              <ul class="list">
+                <li class="btn"><a href="myAccount.html"><span>Profile</span><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                <li class="btn"><a href="#"><span>Logout</span><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- branding ends -->
+
+
+  <section id="profile">
+    <div class="profile-sidenav">
+      <div class="profile-detail">
+        <div class="avatar">
+          <img src="images/avatar.jpg" alt="Profile Picture">
+        </div>
+        <h1>Shekhar Gupta</h1>
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="myAccount.html"><i class="fa  fa-user" aria-hidden="true"></i>Profile</a></li>
+          <li class="active-link active-icon"><a href="myAds.html"><i class="fa fa-database" aria-hidden="true"></i>My Ads</a></li>
+          <li><a href="profile-settings.html"><i class="fa fa-sliders" aria-hidden="true"></i>Settings</a></li>
+          <li><a href="#Profile"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+        </ul>
+      </div>
+    </div><!-- inline-block elements will have space between them, so this is written as to remove the spaces --><div class="profile-content">
+
+      <div class="row-md-ad clearfix">
+        <div class="ad-pic">
+          <img src="images/full/item3.jpg" alt="">
+        </div>
+        <div class="ad-detail">
+          <h1 class="title">Fiitjee-Aakash-Bansal-Allen-Resonance-VMC Fiitjee-Aakash-Bansal-Allen-Resonance-VMC (IIT & Medical) [2016-17]</h1>
+          <p class="date">12:49 pm</p>
+          <p class="price">&#8377; 1500</p>
+          <div class="options">
+            <button class="btn-normal">Edit</button>
+            <button class="btn-normal">Delete</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-md-ad clearfix">
+        <div class="ad-pic">
+          <img src="images/full/item2.jpg" alt="">
+        </div>
+        <div class="ad-detail">
+          <h1 class="title">Resonance/Allen 80 Books for |2016-17| Books With Solutions</h1>
+          <p class="date">27 Feb, 2018</p>
+          <p class="price">&#8377; 2000</p>
+          <div class="options">
+            <button class="btn-normal">Edit</button>
+            <button class="btn-normal">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="content-left">
+      <img class="logo-img" src="images/bookbank.png" alt="BookBank">
+    </div>
+  </footer>
+</body>
+</html>

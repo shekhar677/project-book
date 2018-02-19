@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="text/css" rel="stylesheet" href="css/header-footer.css">
+  <link type="text/css" rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <title>Profile Settings</title>
+</head>
+<body>
+  <div class="branding clearfix" id="brand">
+    <div class="logo">
+      <a href="index.html"><img class="logo-img" src="images/bookbank.png" alt="BookBank"></a>
+    </div>
+    <div class="goto">
+      <a class="ad btn" href="postAd.html">Post Free Ad</a>
+      <div class="group">
+
+        <!-- <div class="parent">
+          <a class="btn" href="login.html"><i class="fa fa-user" aria-hidden="true"></i><span>My Account</span></a>
+        </div> -->
+
+        <!-- to change view from BUTTON to DROPDOWN BUTTON just comment any one of above and below DIV which has PARENT CLASS
+      ...........................................................................................................................
+    .............................................................................................................................
+  ............................................................................................................................... -->
+
+        <div class="parent">
+          <ul>
+            <li>
+              <a class="btn option" href="login.html"><span>Shekhar Gupta</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+              <ul class="list">
+                <li class="btn"><a href="myAccount.html"><span>Profile</span><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                <li class="btn"><a href="#"><span>Logout</span><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- branding ends -->
+
+
+  <section id="profile">
+    <div class="profile-sidenav">
+      <div class="profile-detail">
+        <div class="avatar">
+          <img src="images/avatar.jpg" alt="Profile Picture">
+        </div>
+        <h1>Shekhar Gupta</h1>
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="myAccount.html"><i class="fa  fa-user" aria-hidden="true"></i>Profile</a></li>
+          <li><a href="myAds.html"><i class="fa fa-database" aria-hidden="true"></i>My Ads</a></li>
+          <li class="active-link active-icon"><a href="profile-settings.html"><i class="fa fa-sliders" aria-hidden="true"></i>Settings</a></li>
+          <li><a href="#Logout"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+        </ul>
+      </div>
+    </div><!-- inline-block elements will have space between them, so this is written as to remove the spaces --><div class="profile-content">
+      <div class="row-md">
+        <label>Name</label>
+        <input type="text" name="title" class="form disable" value="Shekhar Gupta">
+      </div>
+
+      <div class="row-md">
+        <label>Email</label>
+        <input type="text" name="title" class="form disable" value="shekhar677@gmail.com">
+      </div>
+
+      <div class="row-md">
+        <label>Phone</label>
+        <input type="tel" name="title" class="form disable" value="987654321">
+      </div>
+
+      <div class="row-md">
+        <label>Password</label>
+        <input type="password" name="title" class="form disable" value="shekhar12345">
+      </div>
+
+      <div class="row-md-2">
+        <label>City</label>
+        <select name="" class="form">
+          <option value="novel">Kanpur</option>
+          <option value="novel" selected>Lucknow</option>
+          <option value="novel">Ghaziabad</option>
+          <option value="novel">Agra</option>
+          <option value="novel">Varanasi</option>
+          <option value="novel">Meerut</option>
+          <option value="novel">Allahabad</option>
+          <option value="novel">Bareilly</option>
+          <option value="novel">Aligarh</option>
+          <option value="novel">Moradabad</option>
+          <option value="novel">Faizabad</option>
+        </select>
+      </div>
+
+      <div class="row-md-2 row-md-2-no-padding">
+        <label>Locality</label>
+        <select name="" class="form">
+          <option value="novel">Chinhat</option>
+          <option value="novel" selected>Polytechnic</option>
+          <option value="novel">Aashiana</option>
+          <option value="novel">Adarsh Nagar</option>
+          <option value="novel">Alambagh</option>
+          <option value="novel">Alamnagar</option>
+          <option value="novel">Allahabad</option>
+          <option value="novel">Aliganj</option>
+          <option value="novel">Amausi</option>
+          <option value="novel">Anand Nagar</option>
+          <option value="novel">Faizabad</option>
+        </select>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="content-left">
+      <img class="logo-img" src="images/bookbank.png" alt="BookBank">
+    </div>
+  </footer>
+</body>
+</html>
