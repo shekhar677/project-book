@@ -51,6 +51,8 @@ label {
 }
 .desc {
   height: 80px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.9rem;
 }
 .btn-submit {
   margin: 5px 13px;

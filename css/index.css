@@ -92,6 +92,7 @@ section#header-top .nav .search .select {
   width: 200px;
   border: none;
   outline: none;
+  background-color: #fff;
 }
 section#header-top .nav .search a i {
   padding-right: 5px;
