@@ -26,7 +26,7 @@
             <li>
               <a class="btn option" href="login.html"><span>Shekhar Gupta</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
               <ul class="list">
-                <li class="btn"><a href="#"><span>Profile</span><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                <li class="btn"><a href="myAccount.html"><span>Profile</span><i class="fa fa-user" aria-hidden="true"></i></a></li>
                 <li class="btn"><a href="#"><span>Logout</span><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
               </ul>
             </li>
@@ -107,23 +107,27 @@
         <!-- choose image file -->
         <div class="image-select">
           <div class="row-md-4 file">
+            <img id="image" src="" alt="">
             <label for="">select image</label>
-            <input type="file" name="image2" multiple data-show-upload="false" data-show-caption="true">
+            <input id="files" type="file" name="image2" multiple data-show-upload="false" data-show-caption="true">
           </div>
 
           <div class="row-md-4 file">
+            <img id="image" src="" alt="">
             <label for="">select image</label>
-            <input type="file" name="image2" multiple data-show-upload="false" data-show-caption="true">
+            <input id="files" type="file" name="image2" multiple data-show-upload="false" data-show-caption="true">
           </div>
 
           <div class="row-md-4 file">
+            <img id="image" src="" alt="">
             <label for="">select image</label>
-            <input type="file" name="image3" multiple data-show-upload="false" data-show-caption="true">
+            <input id="files" type="file" name="image3" multiple data-show-upload="false" data-show-caption="true">
           </div>
 
           <div class="row-md-4 file">
+            <img id="image" src="" alt="">
             <label for="">select image</label>
-            <input type="file" name="image4" multiple data-show-upload="false" data-show-caption="true">
+            <input id="files" type="file" name="image4" multiple data-show-upload="false" data-show-caption="true">
           </div>
         </div>
         <!-- choose image files ends -->
@@ -139,6 +143,21 @@
       <img class="logo-img" src="images/bookbank.png" alt="BookBank">
     </div>
   </footer>
+
+
+  <script>
+    document.getElementById("files").onchange = function () {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+          // get loaded data and render thumbnail.
+          document.getElementById("image").src = e.target.result;
+      };
+
+      // read the image file as a data URL.
+      reader.readAsDataURL(this.files[0]);
+    };
+  </script>
 
 </body>
 </html>

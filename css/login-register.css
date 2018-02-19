@@ -4,6 +4,53 @@ body {
 .shadow {
   box-shadow: 3px 8px 30px #999;
 }
+.row-md {
+  width: 100%;
+  float: left;
+  padding: 13px;
+}
+.btn-submit {
+  margin: 5px 13px;
+  width: 170px;
+}
+.btn {
+  color: #f2f2f2;
+  background: coral;
+  padding: 12px 15px;
+}
+.btn:hover {
+  background: #E8491D;
+}
+.btn:active {
+  background: #b12701;
+}
+input[type='submit'] {
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+  border: none;
+}
+/* input[type='submit']:hover {
+  background: #E8491D;
+}
+input[type='submit']:active {
+  background: #b12701;
+} */
+.form {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  line-height: 1.42857143;
+  color: #888;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 .login-content {
   width: 40%;
   padding: 50px;
