@@ -4,6 +4,11 @@ body {
 .shadow {
   box-shadow: 3px 8px 30px #999;
 }
+.error {
+  font-size: 0.7rem;
+  color: #de302f;
+  margin: 5px 0 0 10px;
+}
 .row-md {
   width: 100%;
   float: left;

@@ -144,21 +144,20 @@ footer .content-left img {
 
 }
 @media all and (max-width: 575px) {
-
   .branding .logo {
     float: none;
     text-align: center;
     margin: 20px 0;
   }
   .branding .goto {
+    width: auto;
     float: none;
     text-align: center;
-    margin: 0;
+    margin-right: 0px;
   }
   .branding .goto .btn {
     padding: 10px 40px;
   }
-
 }
 @media all and (max-width: 412px) {
   .branding .goto > a, .branding .goto .parent > a {

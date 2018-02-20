@@ -6,12 +6,21 @@
 body {
   color: #888;
   font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
   background: #E5E5E5;
+}
+h1 {
+  font-size: 1.5rem;
+  margin: 5px;
+}
+p {
+  font-size: 0.9rem;
+  margin: 3px;
 }
 .row-md {
   width: 100%;
   float: left;
-  padding: 20px;
+  padding: 15px;
   padding-left: 50px;
   text-align: left;
 }
@@ -76,15 +85,14 @@ body {
   text-align: center;
 }
 .profile-sidenav {
-  width:30%;
-  height: 434.625px;
+  width:35%;
   display: inline-block;
   vertical-align: top;
   background: #f2f2f2;
 }
 .profile-content {
   width: 60%;
-  min-height: 434.625px;
+  min-height: 412.469px;
   padding: 40px;
   display: inline-block;
   vertical-align: top;
@@ -93,13 +101,23 @@ body {
 .disable:disabled {
   pointer-events: none;
 }
-.profile-detail {
-  text-align: center;
-  margin-top: 50px;
-}
-.profile-detail h1 {
+.main-title h1 {
+  padding: 10px;
   font-size: 1.5em;
   font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #cdcdcd;
+}
+.profile-detail {
+  text-align: center;
+  margin-top: 40px;
+}
+.profile-detail h1 {
+  font-size: 1.5rem;
+}
+
+.links {
+  margin-top: 40px;
 }
 .links i {
   font-size: 20px;
@@ -119,13 +137,21 @@ body {
   margin-bottom: 10px;
   overflow: hidden;
 }
+.user-detail {
+
+}
+.user-detail h1, .user-detail p {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 .links ul {
-  margin-top: 40px;
   width: 100%:
 }
 .links li {
@@ -159,6 +185,13 @@ img {
 .links li:hover i {
   color: coral;
 }
+.title {
+  font-size: 1.5rem;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .ad-pic {
   width: 30%;
@@ -172,6 +205,9 @@ img {
   margin-left: 10px;
   text-align: left;
   color: #777;
+}
+.ad-detail h1 {
+  margin: 0;
 }
 .title {
   font-size: 1.1rem;
@@ -189,4 +225,99 @@ img {
   font-size: 0.9rem;
   font-weight: 700;
   margin-bottom: 8px;
+}
+
+
+
+/* media query.................... */
+
+@media all and (max-width: 991px) {
+  .profile-sidenav {
+    width: 40%;
+  }
+  .row-md {
+    padding: 10px;
+    padding-left: 0px;
+}
+  .row-md-ad {
+    padding: 0px 0 20px 0px;
+  }
+  #profile {
+    padding: 40px 0px;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .row-md label {
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .form {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+  #profile {
+    padding: 0px;
+  }
+  .profile-content {
+    padding: 20px 30px;
+    min-height: 350.094px;
+  }
+  .profile-detail h1 {
+    font-size: 1rem;
+  }
+  .date, .price {
+    font-size: 0.8rem;
+  }
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+  .links i {
+    font-size: 16px;
+    padding: 0 20px 0 30px;
+  }
+  .links a {
+    font-size: 0.9rem;
+    padding: 0.8em 0em;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .profile-content {
+    width: 100%;
+    min-height: auto;
+    padding: 15px 10px;
+  }
+  .profile-sidenav {
+    width: 100%;
+  }
+  .profile-detail {
+    margin-top: 20px;
+  }
+  .links li {
+    text-align: center;
+  }
+  .links i {
+    font-size: 14px;
+    padding: 0 20px 0 0px;
+  }
+  .links {
+    margin-top: 20px;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  #hide {
+    display: none;
+  }
+}
+
+@media all and (max-width: 412px) {
+  .row-md {
+    padding: 10px 0;
+  }
 }

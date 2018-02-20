@@ -24,9 +24,9 @@
         <div class="parent">
           <ul>
             <li>
-              <a class="btn option" href="login.html"><span>Shekhar Gupta</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+              <a class="btn option" href="#"><span>Shekhar Gupta</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
               <ul class="list">
-                <li class="btn"><a href="myAccount.html"><span>Profile</span><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                <li class="btn"><a href="myAds.html"><span>Profile</span><i class="fa fa-user" aria-hidden="true"></i></a></li>
                 <li class="btn"><a href="#"><span>Logout</span><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
               </ul>
             </li>
@@ -53,32 +53,61 @@
         <div class="row-md">
           <label>Title of Book</label>
           <input type="text" name="title" class="form">
+          <p class="error">this field is necessory</p>
         </div>
 
         <div class="row-md-2">
           <label>Book Category</label>
           <select name="" class="form">
-            <option value="novel">Kanpur</option>
-            <option value="novel">Lucknow</option>
-            <option value="novel">Ghaziabad</option>
-            <option value="novel" selected>Agra</option>
-            <option value="novel">Varanasi</option>
-            <option value="novel">Meerut</option>
-            <option value="novel">Allahabad</option>
-            <option value="novel">Bareilly</option>
-            <option value="novel">Aligarh</option>
-            <option value="novel">Moradabad</option>
-            <option value="novel">Faizabad</option>
+            <option value="novel" selected>Enginnering</option>
+            <option value="novel">Management</option>
+            <option value="novel">Other</option>
+            <option value="novel">Novel</option>
           </select>
         </div>
 
         <div class="row-md-2">
           <label for="">Sub-category</label>
           <select name="" class="form">
+            <option value="novel">Computer Science</option>
+            <option value="novel">Electrical</option>
+            <option value="novel">Electronics</option>
+            <option value="novel" selected>Mechanical</option>
+          </select>
+        </div>
+
+        <div class="row-md">
+          <label for="">Book Description</label>
+          <textarea name="name" rows="8" cols="80" class="form desc"></textarea>
+          <p class="error">this field is necessory</p>
+        </div>
+
+        <div class="row-md">
+          <label for="">Price of the Book</label>
+          <input type="text" class="form">
+          <p class="error">this field is necessory</p>
+        </div>
+
+        <div class="row-md-2">
+          <label>State</label>
+          <select name="" class="form">
+            <option value="novel">Andhra Pradesh</option>
+            <option value="novel">Gujarat</option>
+            <option value="novel">Haryana</option>
+            <option value="novel" selected>Uttar Pradesh</option>
+            <option value="novel">Madhya Pradesh</option>
+            <option value="novel">Manipur</option>
+            <option value="novel">Punjab</option>
+          </select>
+        </div>
+
+        <div class="row-md-2">
+          <label for="">City</label>
+          <select name="" class="form">
             <option value="novel">Kanpur</option>
-            <option value="novel">Lucknow</option>
+            <option value="novel">Agra</option>
             <option value="novel">Ghaziabad</option>
-            <option value="novel" selected>Agra</option>
+            <option value="novel" selected>Lucknow</option>
             <option value="novel">Varanasi</option>
             <option value="novel">Meerut</option>
             <option value="novel">Allahabad</option>
@@ -90,18 +119,9 @@
         </div>
 
         <div class="row-md">
-          <label for="">Book Description</label>
+          <label for="">Address</label>
           <textarea name="name" rows="8" cols="80" class="form desc"></textarea>
-        </div>
-
-        <div class="row-md">
-          <label for="">Price of the Book</label>
-          <input type="text" class="form">
-        </div>
-
-        <div class="row-md">
-          <label for="">City</label>
-          <input type="text" class="form">
+          
         </div>
 
         <!-- choose image file -->

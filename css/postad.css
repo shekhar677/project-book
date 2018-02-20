@@ -12,6 +12,11 @@ body {
   display: table;
   clear: both;
 }
+.error {
+  font-size: 0.7rem;
+  color: #de302f;
+  margin: 5px 0 0 10px;
+}
 .row-md {
   width: 100%;
   float: left;
@@ -53,6 +58,7 @@ label {
   height: 80px;
   font-family: 'Ubuntu', sans-serif;
   font-size: 0.9rem;
+  resize: vertical;
 }
 .btn-submit {
   margin: 5px 13px;

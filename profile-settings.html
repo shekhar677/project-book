@@ -14,7 +14,7 @@
     <div class="logo">
       <a href="index.html"><img class="logo-img" src="images/bookbank.png" alt="BookBank"></a>
     </div>
-    <div class="goto">
+    <div class="goto"  id="hide">
       <a class="ad btn" href="postAd.html">Post Free Ad</a>
       <div class="group">
 
@@ -30,9 +30,9 @@
         <div class="parent">
           <ul>
             <li>
-              <a class="btn option" href="login.html"><span>Shekhar Gupta</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+              <a class="btn option" href="#"><span>Shekhar Gupta</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
               <ul class="list">
-                <li class="btn"><a href="myAccount.html"><span>Profile</span><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                <li class="btn"><a href="myAds.html"><span>Profile</span><i class="fa fa-user" aria-hidden="true"></i></a></li>
                 <li class="btn"><a href="#"><span>Logout</span><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
               </ul>
             </li>
@@ -51,13 +51,18 @@
         <div class="avatar">
           <img src="images/avatar.jpg" alt="Profile Picture">
         </div>
-        <h1>Shekhar Gupta</h1>
+        <div class="user-detail">
+          <h1>Shekhar Gupta</h1>
+          <p>shekhargupta6777@gmail.com</p>
+          <p>987654321</p>
+        </div>
       </div>
+
       <div class="links">
         <ul>
-          <li><a href="myAccount.html"><i class="fa  fa-user" aria-hidden="true"></i>Profile</a></li>
+          <!-- <li class="active-link active-icon"><a href="myAccount.html"><i class="fa  fa-user" aria-hidden="true"></i>Profile</a></li> -->
           <li><a href="myAds.html"><i class="fa fa-database" aria-hidden="true"></i>My Ads</a></li>
-          <li class="active-link active-icon"><a href="profile-settings.html"><i class="fa fa-sliders" aria-hidden="true"></i>Settings</a></li>
+          <li class="active-link active-icon"><a href="profile-settings.html"><i class="fa fa-sliders" aria-hidden="true"></i>Edit Profile</a></li>
           <li><a href="#Logout"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
         </ul>
       </div>
@@ -82,40 +87,9 @@
         <input type="password" name="title" class="form disable" value="shekhar12345">
       </div>
 
-      <div class="row-md-2">
-        <label>City</label>
-        <select name="" class="form">
-          <option value="novel">Kanpur</option>
-          <option value="novel" selected>Lucknow</option>
-          <option value="novel">Ghaziabad</option>
-          <option value="novel">Agra</option>
-          <option value="novel">Varanasi</option>
-          <option value="novel">Meerut</option>
-          <option value="novel">Allahabad</option>
-          <option value="novel">Bareilly</option>
-          <option value="novel">Aligarh</option>
-          <option value="novel">Moradabad</option>
-          <option value="novel">Faizabad</option>
-        </select>
+      <div class="row-md">
+        <button class="btn-normal">Save</button>
       </div>
-
-      <div class="row-md-2 row-md-2-no-padding">
-        <label>Locality</label>
-        <select name="" class="form">
-          <option value="novel">Chinhat</option>
-          <option value="novel" selected>Polytechnic</option>
-          <option value="novel">Aashiana</option>
-          <option value="novel">Adarsh Nagar</option>
-          <option value="novel">Alambagh</option>
-          <option value="novel">Alamnagar</option>
-          <option value="novel">Allahabad</option>
-          <option value="novel">Aliganj</option>
-          <option value="novel">Amausi</option>
-          <option value="novel">Anand Nagar</option>
-          <option value="novel">Faizabad</option>
-        </select>
-      </div>
-    </div>
 
   </section>
 
