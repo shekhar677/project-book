@@ -1,5 +1,10 @@
+:root {
+  --font-color: #2d3436;
+  --h1-color: #777;
+}
+
 body {
-  color: #888;
+  color: var(--h1-color);
 }
 .shadow {
   box-shadow: 3px 8px 30px #999;
@@ -37,12 +42,6 @@ input[type='submit'] {
   transition: 0.2s;
   border: none;
 }
-/* input[type='submit']:hover {
-  background: #E8491D;
-}
-input[type='submit']:active {
-  background: #b12701;
-} */
 .form {
   display: block;
   width: 100%;
@@ -50,7 +49,7 @@ input[type='submit']:active {
   padding: 6px 12px;
   font-size: 0.9rem;
   line-height: 1.42857143;
-  color: #888;
+  color: var(--h1-color);
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -70,14 +69,14 @@ input[type='submit']:active {
   float: right;
 }
 a.forgot, a.new-account {
-  display: inline-block;
+  display: block;
   margin: 13px;
   text-decoration: none;
   font-size: 1em;
   cursor: pointer;
   position: relative;
   transition: 0.2s;
-  color: #888;
+  color: var(--h1-color);
 }
 a.forgot:hover, a.new-account:hover {
   color: #E8491D;

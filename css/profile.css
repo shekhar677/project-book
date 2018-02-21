@@ -1,10 +1,15 @@
+:root {
+  --font-color: #2d3436;
+  --h1-color: #777;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
-  color: #888;
+  color: var(--h1-color);
   font-family: 'Ubuntu', sans-serif;
   font-size: 1rem;
   background: #E5E5E5;
@@ -16,6 +21,15 @@ h1 {
 p {
   font-size: 0.9rem;
   margin: 3px;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    height: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
 }
 .row-md {
   width: 100%;
@@ -47,7 +61,7 @@ p {
   padding: 6px 12px;
   font-size: 0.9rem;
   line-height: 1.42857143;
-  color: #888;
+  color: var(--h1-color);
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -123,7 +137,7 @@ p {
   font-size: 20px;
   padding: 0 40px 0 30px;
   display: inline;
-  color: #777;
+  color: var(--h1-color);
 }
 .profile-detail .avatar {
   position: relative;
@@ -162,7 +176,7 @@ img {
   margin-bottom: 0;
 }
 .links a {
-  color: #777;
+  color: var(--h1-color);
   display: block;
   padding: 0.8em 1.5em;
   text-decoration: none;
@@ -204,7 +218,7 @@ img {
   float: left;
   margin-left: 10px;
   text-align: left;
-  color: #777;
+  color: var(--h1-color);
 }
 .ad-detail h1 {
   margin: 0;

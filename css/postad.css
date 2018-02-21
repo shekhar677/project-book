@@ -1,3 +1,9 @@
+:root {
+  --font-color: #2d3436;
+  --h1-color: #777;
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -39,7 +45,7 @@ label {
   display: block;
   max-width: 100%;
   margin-bottom: 5px;
-  color: #888;
+  color: var(--h1-color);
 }
 .form {
   display: block;
@@ -48,7 +54,7 @@ label {
   padding: 6px 12px;
   font-size: 0.9rem;
   line-height: 1.42857143;
-  color: #888;
+  color: var(--h1-color);
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;

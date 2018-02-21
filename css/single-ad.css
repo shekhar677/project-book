@@ -1,0 +1,130 @@
+:root {
+  --font-color: #2d3436;
+  --h1-color: #777;
+  --light-gray: #e5e5e5;
+  --new-gray: #95a5a6;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background: var(--light-gray);
+}
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.container {
+  width: 90%;
+  margin: 50px auto;
+  padding: 20px 15px;
+  background: #fff;
+}
+.pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.user h1, .user p {
+  text-align: center;
+  margin: 0.2em 0;
+  color: var(--h1-color);
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.user-desc {
+  position: relative;
+  margin: 20px 0;
+  padding: 10px;
+  background: var(--light-gray);
+}
+.pic {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.user-desc img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ad-desc {
+  float: left;
+  width: 60%;
+  padding: 10px;
+  border-right: 1px solid var(--light-gray);
+}
+.book-desc {
+  float: left;
+  width: 40%;
+  padding: 10px 20px;
+}
+.ad-title {
+  margin-bottom: 20px;
+}
+.ad-title h1 {
+  color: var(--h1-color);
+  font-size: 1.6rem;
+}
+.ad-info {
+  border-top: 1px solid var(--light-gray);
+  padding: 15px 0;
+}
+.ad-info i {
+  margin: 0 7px;
+  color: var(--h1-color);
+}
+.ad-data {
+  color: var(--h1-color);
+  float: left;
+  margin-right: 20px;
+}
+.slider-image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.slider-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.ad-price {
+  padding: 10px;
+  border-radius: 5px;
+  background: var(--new-gray);
+  width: 100%;
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 600;
+  color: #fff;
+}
+.ad-description {
+  padding: 10px;
+  margin: 20px 0;
+}
+.ad-description p {
+  text-align: left;
+  font-size: 1rem;
+  color: var(--font-color);
+}
+.ad-description div {
+  border-bottom: 1px solid var(--light-gray);
+  margin: 20px 0;
+}
+.ad-description h1 {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--font-color);
+}

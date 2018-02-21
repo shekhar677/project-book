@@ -1,3 +1,9 @@
+:root {
+  --font-color: #2d3436;
+  --h1-color: #777;
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,7 +20,7 @@ body {
 }
 .search-default {
   font-family: 'Ubuntu', sans-serif;
-  color: #666;
+  color: var(--h1-color);
   font-size: 1rem;
   height: 40px;
   padding: 10px;
@@ -81,8 +87,11 @@ section#header-top .nav .search .select-container {
   display: inline-block;
   background: #fff;
   padding-left: 11px;
-  color: #888;
+  color: var(--font-color);
   border: 1px solid #fff;
+}
+.select-container i {
+  color: var(--h1-color);
 }
 section#header-top .nav .search input[type="text"] {
   width: 40%;
@@ -118,7 +127,7 @@ section#header-top .nav .search a i {
   overflow: hidden;
   white-space: nowrap;
   font-size: 1rem;
-  color: #888;
+  color: var(--font-color);
   padding: 12px 13px;
 }
 #categories .row .col  a {
@@ -138,7 +147,7 @@ section#recent {
 }
 section#recent h1 {
   text-align: center;
-  color: #888;
+  color: var(--h1-color);
   font-size: 2rem;
   padding: 50px;
 }
@@ -167,7 +176,7 @@ section#recent .box .image img {
 section#recent .box .title {
   margin-top: 10px;
   font-size: 0.9rem;
-  color: #888;
+  color: var(--h1-color);
   text-align: center;
 }
 section#recent .box .image a {
@@ -218,7 +227,7 @@ section#recent .content .pagination ul li {
   }
   #categories .row .col .desc {
     font-size: 0.8rem;
-    color: #888;
+    color: var(--h1-color);
     padding: 10px 12px;
   }
 
@@ -306,8 +315,13 @@ section#recent .content .pagination ul li {
 
 @media all and (max-width: 412px) {
 
+  #categories {
+    position: relative;
+    top: -55px;
+    width: 100%;
+  }
   .col {
-    width: 80%;
+    width: 49%;
     float: none;
     margin: 10px 0;
   }
@@ -322,4 +336,10 @@ section#recent .content .pagination ul li {
     width: 80%;
   }
 
+}
+
+@media all and (max-width: 320px) {
+  .col {
+    width: 100%;
+  }
 }

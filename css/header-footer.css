@@ -1,3 +1,9 @@
+:root {
+  --font-color: #2d3436;
+  --h1-color: #777;
+}
+
+
 /* default common styles */
 * {
   box-sizing: border-box;
@@ -113,7 +119,7 @@ footer {
   text-align: center;
   line-height: 30px;
   font-size: 1rem;
-  color: #888;
+  color: var(--h1-color);
   font-weight: 700;
   width: 100%;
   padding: 20px;
