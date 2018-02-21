@@ -3,6 +3,7 @@
   --h1-color: #777;
   --light-gray: #e5e5e5;
   --new-gray: #95a5a6;
+  --green: #6ab04c;
 }
 
 
@@ -25,6 +26,7 @@ body {
   margin: 50px auto;
   padding: 20px 15px;
   background: #fff;
+  font-size: 1rem;
 }
 .pic {
   width: 80px;
@@ -42,6 +44,9 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.user h1 {
+  font-size: 1.4rem;
+  }
 .user-desc {
   position: relative;
   margin: 20px 0;
@@ -64,9 +69,12 @@ body {
   padding: 10px;
   border-right: 1px solid var(--light-gray);
 }
-.book-desc {
+.right-panel {
   float: left;
   width: 40%;
+  height: auto;
+}
+.book-desc {
   padding: 10px 20px;
 }
 .ad-title {
@@ -87,7 +95,7 @@ body {
 .ad-data {
   color: var(--h1-color);
   float: left;
-  margin-right: 20px;
+  margin: 5px 20px 5px 0;
 }
 .slider-image {
   width: 100%;
@@ -102,16 +110,15 @@ body {
 .ad-price {
   padding: 10px;
   border-radius: 5px;
-  background: var(--new-gray);
+  background: var(--green);
   width: 100%;
   text-align: center;
-  font-size: 2.7rem;
+  font-size: 2.2rem;
   font-weight: 600;
   color: #fff;
 }
 .ad-description {
-  padding: 10px;
-  margin: 20px 0;
+  padding: 20px;
 }
 .ad-description p {
   text-align: left;
@@ -124,7 +131,97 @@ body {
 }
 .ad-description h1 {
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
-  color: var(--font-color);
+  color: var(--h1-color);
+}
+
+
+
+
+/* media query.................... */
+
+@media all and (max-width: 991px) {
+  .ad-price {
+    font-size: 2.1rem;
+  }
+  .container {
+    width: 95%;
+  }
+  .ad-description {
+    padding: 10px;
+    margin: 0;
+  }
+  .ad-description div {
+    border-bottom: 1px solid var(--light-gray);
+    margin: 0 0 20px 0;
+  }
+  .book-desc {
+    padding: 10px 10px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .right-panel {
+    float: none;
+    width: 100%;
+  }
+  .container {
+    font-size: 0.8rem;
+    width: 100%;
+    margin: 0;
+    padding: 20px 8px;
+    border-top: 2px solid var(--light-gray);
+  }
+  .user h1 {
+    font-size: 1.3rem;
+  }
+  .ad-title h1 {
+    font-size: 1.3rem;
+  }
+  .ad-price {
+    font-size: 1.4rem;
+  }
+  .ad-desc {
+    float: none;
+    width: 100%;
+    padding: 10px;
+    border-right: 0;
+    margin-bottom: 20px;
+  }
+  .ad-desc h1 {
+    font-size: 1.5rem;
+  }
+  .pic {
+    width: 60px;
+    height: 60px;
+  }
+  .book-desc {
+    float: left;
+    width: 40%;
+  }
+  .ad-description {
+    float: left;
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .book-desc {
+    float: none;
+    width: 100%;
+  }
+  .ad-description {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 412px) {
+  .ad-desc h1 {
+    font-size: 1.4rem;
+  }
+  .ad-description h1 {
+    font-size: 1.5rem;
+  }
 }
