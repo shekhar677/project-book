@@ -75,6 +75,7 @@ a {
    clear: both;
 }
 .btn-normal {
+  text-align: center;
   margin: 0 5px 5px 0 ;
   width: 80px;
   float: left;
