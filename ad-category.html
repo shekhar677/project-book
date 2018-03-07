@@ -45,30 +45,31 @@
 
   <div class="ad-category">
     <div class="top-group">
-      <div class="ads-number">
-        <span>All Ads: 2834</span>
-      </div>
-      <div class="top-filter clearfix">
+      <!-- <div class="ads-number">
+        <span class="desc-text">All Ads: 2834</span>
+      </div> -->
+      <div class="top-filter">
         <div class="col-filter">
-          <div class="icon">
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-          </div>
-          <select class="form-input" name="">
-            <option value="novel">Kanpur</option>
-            <option value="novel">Lucknow</option>
-            <option value="novel">Ghaziabad</option>
-            <option value="novel" selected>Agra</option>
-            <option value="novel">Varanasi</option>
-            <option value="novel">Meerut</option>
-            <option value="novel">Allahabad</option>
-            <option value="novel">Bareilly</option>
-            <option value="novel">Aligarh</option>
-            <option value="novel">Moradabad</option>
-            <option value="novel">Faizabad</option>
-          </select>
+          <p class="desc-text">Select your city</p>
+          <!-- <label class="fa-icon"> -->
+            <select class="form-input" name="">
+              <option value="novel">Kanpur</option>
+              <option value="novel">Lucknow</option>
+              <option value="novel">Ghaziabad</option>
+              <option value="novel" selected>Agra</option>
+              <option value="novel">Varanasi</option>
+              <option value="novel">Meerut</option>
+              <option value="novel">Allahabad</option>
+              <option value="novel">Bareilly</option>
+              <option value="novel">Aligarh</option>
+              <option value="novel">Moradabad</option>
+              <option value="novel">Faizabad</option>
+            </select>
+          <!-- </label> -->
         </div>
 
         <div class="col-filter">
+          <p class="desc-text">Category</p>
           <select class="form-input">
             <option value="Cars">Mechanical</option>
             <option value="Commercial vehicles">Electrical</option>
@@ -79,6 +80,7 @@
         </div>
 
         <div class="col-filter">
+          <p class="desc-text">Sub-category</p>
           <select class="form-input">
             <option value="Cars">Mechanical</option>
             <option value="Commercial vehicles">Electrical</option>
@@ -87,119 +89,253 @@
             <option value="Boats">Electronics</option>
           </select>
         </div>
-
       </div>
     </div>
 
-      <div class="category">
-        <div class="cat">
-          <div class="ad-top">
-            <img src="" alt="">
-          </div>
-          <div class="ad-bottom">
-            <p class="ad-title"></p>
-            <h1 class="ad-price"></h1>
-            <p class="ad-contact"></p>
-            <p class="seller-name"></p>
-          </div>
+    <div class="category">
+      <div class="cat">
+        <div class="ad-top">
+          <a href="#single-ad">
+            <img src="images/thumb/item1.jpg" alt="">
+          </a>
         </div>
-
-        <div class="cat">
-          <div class="ad-top">
-            <img src="" alt="">
-          </div>
-          <div class="ad-bottom">
-            <p class="ad-title"></p>
-            <h1 class="ad-price"></h1>
-            <p class="ad-contact"></p>
-            <p class="seller-name"></p>
-          </div>
-        </div>
-
-        <div class="cat">
-          <div class="ad-top">
-            <img src="" alt="">
-          </div>
-          <div class="ad-bottom">
-            <p class="ad-title"></p>
-            <h1 class="ad-price"></h1>
-            <p class="ad-contact"></p>
-            <p class="seller-name"></p>
-          </div>
-        </div>
-
-        <div class="cat">
-          <div class="ad-top">
-            <img src="" alt="">
-          </div>
-          <div class="ad-bottom">
-            <p class="ad-title"></p>
-            <h1 class="ad-price"></h1>
-            <p class="ad-contact"></p>
-            <p class="seller-name"></p>
-          </div>
-        </div>
-
-        <div class="cat">
-          <div class="ad-top">
-            <img src="" alt="">
-          </div>
-          <div class="ad-bottom">
-            <p class="ad-title"></p>
-            <h1 class="ad-price"></h1>
-            <p class="ad-contact"></p>
-            <p class="seller-name"></p>
-          </div>
-        </div>
-
-        <div class="cat">
-          <div class="ad-top">
-            <img src="" alt="">
-          </div>
-          <div class="ad-bottom">
-            <p class="ad-title"></p>
-            <h1 class="ad-price"></h1>
-            <p class="ad-contact"></p>
-            <p class="seller-name"></p>
-          </div>
-        </div>
-
-        <div class="cat">
-          <div class="ad-top">
-            <img src="" alt="">
-          </div>
-          <div class="ad-bottom">
-            <p class="ad-title"></p>
-            <h1 class="ad-price"></h1>
-            <p class="ad-contact"></p>
-            <p class="seller-name"></p>
-          </div>
-        </div>
-
-        <div class="cat">
-          <div class="ad-top">
-            <img src="" alt="">
-          </div>
-          <div class="ad-bottom">
-            <p class="ad-title"></p>
-            <h1 class="ad-price"></h1>
-            <p class="ad-contact"></p>
-            <p class="seller-name"></p>
-          </div>
-        </div>
-
-        <div class="cat">
-          <div class="ad-top">
-            <img src="" alt="">
-          </div>
-          <div class="ad-bottom">
-            <p class="ad-title"></p>
-            <h1 class="ad-price"></h1>
-            <p class="ad-contact"></p>
-            <p class="seller-name"></p>
+        <div class="ad-bottom">
+          <a href="#single-ad">
+            <p class="ad-title truncate-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores tempore cum nostrum ipsum aliquam nesciunt reprehenderit sit nihil dolorum amet.</p>
+          </a>
+          <div class="ad-bottom-detail">
+            <div class="ad-detail-left">
+              <h1 class="ad-price">&#8377; 1000</h1>
+            </div>
+            <div class="ad-detail-right">
+              <p class="ad-time">3 Mar, 03:36</p>
+              <p class="ad-city">Lucknow</p>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="cat">
+        <div class="ad-top">
+          <a href="#single-ad">
+            <img src="images/thumb/item2.jpg" alt="">
+          </a>
+        </div>
+        <div class="ad-bottom">
+          <a href="#single-ad">
+            <p class="ad-title truncate-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores tempore cum nostrum ipsum aliquam nesciunt reprehenderit sit nihil dolorum amet.</p>
+          </a>
+          <div class="ad-bottom-detail">
+            <div class="ad-detail-left">
+              <h1 class="ad-price">&#8377; 1000</h1>
+            </div>
+            <div class="ad-detail-right">
+              <p class="ad-time">3 Mar, 03:36</p>
+              <p class="ad-city">Lucknow</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat">
+        <div class="ad-top">
+          <a href="#single-ad">
+            <img src="images/thumb/item3.jpg" alt="">
+          </a>
+        </div>
+        <div class="ad-bottom">
+          <a href="#single-ad">
+            <p class="ad-title truncate-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores tempore cum nostrum ipsum aliquam nesciunt reprehenderit sit nihil dolorum amet.</p>
+          </a>
+          <div class="ad-bottom-detail">
+            <div class="ad-detail-left">
+              <h1 class="ad-price">&#8377; 999</h1>
+            </div>
+            <div class="ad-detail-right">
+              <p class="ad-time">3 Mar, 03:36</p>
+              <p class="ad-city">Lucknow</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat">
+        <div class="ad-top">
+          <a href="#single-ad">
+            <img src="images/thumb/item4.jpg" alt="">
+          </a>
+        </div>
+        <div class="ad-bottom">
+          <a href="#single-ad">
+            <p class="ad-title truncate-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores tempore cum nostrum ipsum aliquam nesciunt reprehenderit sit nihil dolorum amet.</p>
+          </a>
+          <div class="ad-bottom-detail">
+            <div class="ad-detail-left">
+              <h1 class="ad-price">&#8377; 980</h1>
+            </div>
+            <div class="ad-detail-right">
+              <p class="ad-time">3 Mar, 03:36</p>
+              <p class="ad-city">Lucknow</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat">
+        <div class="ad-top">
+          <a href="#single-ad">
+            <img src="images/thumb/item5.jpg" alt="">
+          </a>
+        </div>
+        <div class="ad-bottom">
+          <a href="#single-ad">
+            <p class="ad-title truncate-text">elit. Asperiores tempore cum nostrum ipsum aliquam nesciunt reprehenderit sit nihil dolorum amet.</p>
+          </a>
+          <div class="ad-bottom-detail">
+            <div class="ad-detail-left">
+              <h1 class="ad-price">&#8377; 5900</h1>
+            </div>
+            <div class="ad-detail-right">
+              <p class="ad-time">3 Mar, 03:36</p>
+              <p class="ad-city">Lucknow</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat">
+        <div class="ad-top">
+          <a href="#single-ad">
+            <img src="images/thumb/item6.jpg" alt="">
+          </a>
+        </div>
+        <div class="ad-bottom">
+          <a href="#single-ad">
+            <p class="ad-title truncate-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores tempore cum nostrum ipsum aliquam nesciunt reprehenderit sit nihil dolorum amet.</p>
+          </a>
+          <div class="ad-bottom-detail">
+            <div class="ad-detail-left">
+              <h1 class="ad-price">&#8377; 2000</h1>
+            </div>
+            <div class="ad-detail-right">
+              <p class="ad-time">3 Mar, 03:36</p>
+              <p class="ad-city">Lucknow</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat">
+        <div class="ad-top">
+          <a href="#single-ad">
+            <img src="images/thumb/item7.jpg" alt="">
+          </a>
+        </div>
+        <div class="ad-bottom">
+          <a href="#single-ad">
+            <p class="ad-title truncate-text">consectetur adipisicing elit. Asperiores tempore cum nostrum ipsum aliquam nesciunt reprehenderit sit nihil dolorum amet.</p>
+          </a>
+          <div class="ad-bottom-detail">
+            <div class="ad-detail-left">
+              <h1 class="ad-price">&#8377; 590</h1>
+            </div>
+            <div class="ad-detail-right">
+              <p class="ad-time">3 Mar, 03:36</p>
+              <p class="ad-city">Lucknow</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat">
+        <div class="ad-top">
+          <a href="#single-ad">
+            <img src="images/thumb/item3.jpg" alt="">
+          </a>
+        </div>
+        <div class="ad-bottom">
+          <a href="#single-ad">
+            <p class="ad-title truncate-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores tempore cum nostrum ipsum aliquam nesciunt reprehenderit sit nihil dolorum amet.</p>
+          </a>
+          <div class="ad-bottom-detail">
+            <div class="ad-detail-left">
+              <h1 class="ad-price">&#8377; 900</h1>
+            </div>
+            <div class="ad-detail-right">
+              <p class="ad-time">3 Mar, 03:36</p>
+              <p class="ad-city">Lucknow</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat">
+        <div class="ad-top">
+          <a href="#single-ad">
+            <img src="images/thumb/item4.jpg" alt="">
+          </a>
+        </div>
+        <div class="ad-bottom">
+          <a href="#single-ad">
+            <p class="ad-title truncate-text">nesciunt reprehenderit sit nihil dolorum amet.</p>
+          </a>
+          <div class="ad-bottom-detail">
+            <div class="ad-detail-left">
+              <h1 class="ad-price">&#8377; 1000</h1>
+            </div>
+            <div class="ad-detail-right">
+              <p class="ad-time">3 Mar, 03:36</p>
+              <p class="ad-city">Lucknow</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat">
+        <div class="ad-top">
+          <a href="#single-ad">
+            <img src="images/thumb/item4.jpg" alt="">
+          </a>
+        </div>
+        <div class="ad-bottom">
+          <a href="#single-ad">
+            <p class="ad-title truncate-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores tempore cum nostrum ipsum aliquam nesciunt reprehenderit sit nihil dolorum amet.</p>
+          </a>
+          <div class="ad-bottom-detail">
+            <div class="ad-detail-left">
+              <h1 class="ad-price">&#8377; 980</h1>
+            </div>
+            <div class="ad-detail-right">
+              <p class="ad-time">3 Mar, 03:36</p>
+              <p class="ad-city">Lucknow</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat">
+        <div class="ad-top">
+          <a href="#single-ad">
+            <img src="images/thumb/item3.jpg" alt="">
+          </a>
+        </div>
+        <div class="ad-bottom">
+          <a href="#single-ad">
+            <p class="ad-title truncate-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores tempore cum nostrum ipsum aliquam nesciunt reprehenderit sit nihil dolorum amet.</p>
+          </a>
+          <div class="ad-bottom-detail">
+            <div class="ad-detail-left">
+              <h1 class="ad-price">&#8377; 900</h1>
+            </div>
+            <div class="ad-detail-right">
+              <p class="ad-time">3 Mar, 03:36</p>
+              <p class="ad-city">Lucknow</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
   </div>
 
