@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/admin-panel.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <title>Category</title>
+</head>
+<body>
+  <div class="wrapper clearfix">
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <p class="close-btn" id="close">&times;</p>
+      <div class="admin-detail">
+        <p class="admin-name">Shekhar Gupta</p>
+      </div>
+      <div class="sidebar-items">
+        <nav>
+          <ul class="nav">
+            <li>
+              <a href="admin-panel.html">
+                <i class="fa fa-area-chart" aria-hidden="true"></i>
+                <span>Site Stats</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-recent-ads.html">
+                <i class="fa fa-file-text" aria-hidden="true"></i>
+                <span>Recent Ads</span>
+              </a>
+            </li>
+            <li>
+              <a class="navbar-active" href="admin-category.html">
+                <i class="fa fa-object-group" aria-hidden="true"></i>
+                <span>Category</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-sub-category.html">
+                <i class="fa fa-list-alt" aria-hidden="true"></i>
+                <span>Sub-Category</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-state-city.html">
+                <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                <span>State and City</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+    </section>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN -->
+    <section id="main">
+      <!-- NAVBAR -->
+      <nav>
+        <div class="navbar-btn" id="sidebar-btn">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="navbar-logo">
+          <img src="images/bookbank.png" alt="" width="100px">
+        </div>
+      </nav>
+      <!-- NAVBAR ENDS -->
+
+      <!-- MAIN-CONTENT -->
+      <div class="main-content">
+        <div class="admin-category-grid" id="allCategory-panel">
+
+          <div class="admin-category-wrapper ad-shadow">
+            <div class="admin-category-img">
+              <img src="images/icon/b1.png" alt="">
+            </div>
+            <div class="admin-category-name">
+              <p>Management</p>
+            </div>
+            <div class="recent-ad-options">
+              <a onclick="openModal();" class="allow">Edit</a>
+              <button class="block">Delete</button>
+            </div>
+          </div>
+
+          <div class="admin-category-wrapper ad-shadow">
+            <div class="admin-category-img">
+              <img src="images/icon/b2.png" alt="">
+            </div>
+            <div class="admin-category-name">
+              <p>Engineering</p>
+            </div>
+            <div class="recent-ad-options">
+              <a onclick="openModal();" class="allow">Edit</a>
+              <button class="block">Delete</button>
+            </div>
+          </div>
+
+          <div class="admin-category-wrapper ad-shadow">
+            <div class="admin-category-img">
+              <img src="images/icon/b3.png" alt="">
+            </div>
+            <div class="admin-category-name">
+              <p>Mechanical</p>
+            </div>
+            <div class="recent-ad-options">
+              <a onclick="openModal();" class="allow">Edit</a>
+              <button class="block">Delete</button>
+            </div>
+          </div>
+
+          <div class="admin-category-wrapper ad-shadow">
+            <div class="admin-category-img">
+              <img src="images/icon/b4.png" alt="">
+            </div>
+            <div class="admin-category-name">
+              <p>Chemical</p>
+            </div>
+            <div class="recent-ad-options">
+              <a onclick="openModal();" class="allow">Edit</a>
+              <button class="block">Delete</button>
+            </div>
+          </div>
+
+          <div class="admin-category-wrapper ad-shadow">
+            <div class="admin-category-img">
+              <img src="images/icon/b5.png" alt="">
+            </div>
+            <div class="admin-category-name">
+              <p>Civil</p>
+            </div>
+            <div class="recent-ad-options">
+              <a onclick="openModal();" class="allow">Edit</a>
+              <button class="block">Delete</button>
+            </div>
+          </div>
+
+          <div class="admin-category-wrapper ad-shadow">
+            <div class="admin-category-img">
+              <img src="images/icon/b6.png" alt="">
+            </div>
+            <div class="admin-category-name">
+              <p>Computer Science</p>
+            </div>
+            <div class="recent-ad-options">
+              <a onclick="openModal();" class="allow">Edit</a>
+              <button class="block">Delete</button>
+            </div>
+          </div>
+
+          <div class="admin-category-wrapper ad-shadow">
+            <div class="admin-category-img">
+              <img src="images/icon/b7.png" alt="">
+            </div>
+            <div class="admin-category-name">
+              <p>Information</p>
+            </div>
+            <div class="recent-ad-options">
+              <a onclick="openModal();" class="allow">Edit</a>
+              <button class="block">Delete</button>
+            </div>
+          </div>
+
+          <div class="admin-category-wrapper ad-shadow">
+            <div class="admin-category-img">
+              <img src="images/icon/b1.png" alt="">
+            </div>
+            <div class="admin-category-name">
+              <p>Management</p>
+            </div>
+            <div class="recent-ad-options">
+              <a onclick="openModal();" class="allow">Edit</a>
+              <button class="block">Delete</button>
+            </div>
+          </div>
+
+          <div class="admin-category-wrapper ad-shadow">
+            <div class="admin-category-img">
+              <img src="images/icon/b2.png" alt="">
+            </div>
+            <div class="admin-category-name">
+              <p>Management</p>
+            </div>
+            <div class="recent-ad-options">
+              <a onclick="openModal();" class="allow">Edit</a>
+              <button class="block">Delete</button>
+            </div>
+          </div>
+
+          <div class="admin-category-wrapper ad-shadow">
+            <div class="admin-category-img">
+              <img src="images/icon/b3.png" alt="">
+            </div>
+            <div class="admin-category-name">
+              <p>Management</p>
+            </div>
+            <div class="recent-ad-options">
+              <a onclick="openModal();" class="allow">Edit</a>
+              <button class="block">Delete</button>
+            </div>
+          </div>
+
+          <div class="admin-category-wrapper ad-shadow">
+            <div class="admin-category-img">
+              <img src="images/icon/b4.png" alt="">
+            </div>
+            <div class="admin-category-name">
+              <p>Management</p>
+            </div>
+            <div class="recent-ad-options">
+              <a onclick="openModal();" class="allow">Edit</a>
+              <button class="block">Delete</button>
+            </div>
+          </div>
+
+          <div class="admin-category-wrapper ad-shadow">
+            <div class="admin-category-img">
+              <img src="images/icon/b5.png" alt="">
+            </div>
+            <div class="admin-category-name">
+              <p>Management</p>
+            </div>
+            <div class="recent-ad-options">
+              <a onclick="openModal();" class="allow">Edit</a>
+              <button class="block">Delete</button>
+            </div>
+          </div>
+
+          <div class="admin-category-wrapper ad-shadow">
+            <div class="admin-category-img">
+              <img src="images/icon/b6.png" alt="">
+            </div>
+            <div class="admin-category-name">
+              <p>Management</p>
+            </div>
+            <div class="recent-ad-options">
+              <a onclick="openModal();" class="allow">Edit</a>
+              <button class="block">Delete</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- modal for editing category -->
+        <div id="modal">
+          <div class="modal-content">
+            <span id="closeBtn">&times;</span>
+            <form action="#submit-changes" method="post">
+              <div class="addCategory-panel-row">
+                <div class="show-image">
+                  <img id="output" alt="">
+                </div>
+                <label>Category Image</label>
+                <input type="file" accept="image/*" onchange="loadFile(event)">
+              </div>
+              <div class="addCategory-panel-row">
+                <label>Category Name</label>
+                <input type="text" class="">
+              </div>
+              <div class="addCategory-panel-row">
+                <button class="input-btn" type="submit" name="button">Update</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+      <!-- MAIN-CONTENT ENDS -->
+    </section>
+    <!-- END MAIN -->
+  </div>
+
+  <script>
+    // javascript for admin-panel sidebar show and Hide
+    var sidebarBtn = document.getElementById('sidebar-btn');
+    var closeBtn = document.getElementById('close');
+    var main = document.getElementById('main');
+    var sidebar = document.getElementById('sidebar');
+
+    sidebarBtn.addEventListener('click', function() {
+      sidebar.style.left = '0px';
+      main.style.marginLeft = '260px';
+    });
+    closeBtn.addEventListener('click', function() {
+      sidebar.style.left = '-260px';
+      main.style.marginLeft = '0px';
+    });
+
+    // to show image before upload
+    var loadFile = function(event) {
+      var output = document.getElementById('output');
+      output.src = URL.createObjectURL(event.target.files[0]);
+    };
+
+
+    // code for modal...............
+    var modal = document.getElementById('modal');
+    var closeBtn = document.getElementById('closeBtn');
+    var openBtn = document.getElementById('openBtn');
+
+    closeBtn.addEventListener('click', closeModal);
+    // open modal function
+    function openModal() {
+      console.log('Open clicked');
+      modal.style.display = 'block';
+    }
+    //close modal function
+    function closeModal() {
+      modal.style.display = 'none';
+      console.log('Close clicked');
+    }
+  </script>
+</body>
+</html>

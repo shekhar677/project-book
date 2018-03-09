@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/admin-panel.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <title>Admin</title>
+</head>
+<body>
+  <div class="wrapper clearfix">
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <p class="close-btn" id="close">&times;</p>
+      <div class="admin-detail">
+        <p class="admin-name">Shekhar Gupta</p>
+      </div>
+      <div class="sidebar-items">
+        <nav>
+          <ul class="nav">
+            <li>
+              <a class="navbar-active" href="#">
+                <i class="fa fa-area-chart" aria-hidden="true"></i>
+                <span>Site Stats</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-recent-ads.html">
+                <i class="fa fa-file-text" aria-hidden="true"></i>
+                <span>Recent Ads</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-category.html">
+                <i class="fa fa-object-group" aria-hidden="true"></i>
+                <span>Category</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-sub-category.html">
+                <i class="fa fa-list-alt" aria-hidden="true"></i>
+                <span>Sub-Category</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-state-city.html">
+                <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                <span>State and City</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+    </section>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN -->
+    <section id="main">
+      <!-- NAVBAR -->
+      <nav>
+        <div class="navbar-btn" id="sidebar-btn">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="navbar-logo">
+          <img src="images/bookbank.png" alt="" width="100px">
+        </div>
+      </nav>
+      <!-- NAVBAR ENDS -->
+
+      <!-- MAIN-CONTENT -->
+      <div class="main-content">
+        <!-- website stats will be shown in cards -->
+      </div>
+      <!-- MAIN-CONTENT ENDS -->
+    </section>
+    <!-- END MAIN -->
+  </div>
+
+  <script>
+    // javascript for admin-panel sidebar show and Hide
+    var sidebarBtn = document.getElementById('sidebar-btn');
+    var closeBtn = document.getElementById('close');
+    var main = document.getElementById('main');
+    var sidebar = document.getElementById('sidebar');
+
+    sidebarBtn.addEventListener('click', function() {
+      console.log('sidebar open');
+      sidebar.style.left = '0px';
+      main.style.marginLeft = '260px';
+    });
+    closeBtn.addEventListener('click', function() {
+      sidebar.style.left = '-260px';
+      main.style.marginLeft = '0px';
+    });
+  </script>
+</body>
+</html>
