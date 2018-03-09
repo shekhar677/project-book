@@ -317,10 +317,15 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+.input-type {
+  border: none;
+  width: 200px;
+  padding: 5px;
+}
 
 
 /* modal styles...................... */
-#modal {
+#modal, #modalCity, #modalStates {
   display: none;
   position: fixed;
   z-index: 1;
@@ -346,6 +351,11 @@ body {
   cursor: pointer;
 }
 
+.addNewData {
+  text-align: center;
+  width:200px;
+  margin: 20px;
+}
 
 /* media query........................ */
 @media screen and (max-width: 768px) {

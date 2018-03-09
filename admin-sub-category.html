@@ -69,6 +69,11 @@
 
       <!-- MAIN-CONTENT -->
       <div class="main-content">
+
+        <div class="addNewData">
+          <a onclick="openModal();" class="allow">Add new Sub-Category</a>
+        </div>
+
         <div class="admin-category-grid" id="allCategory-panel">
 
           <div class="admin-category-wrapper ad-shadow">
@@ -255,7 +260,16 @@
                 <input type="file" accept="image/*" onchange="loadFile(event)">
               </div>
               <div class="addCategory-panel-row">
-                <label>Category Name</label>
+                <label>Category</label>
+                <select name="" class="input-type">
+                  <option value="novel" selected>Enginnering</option>
+                  <option value="novel">Management</option>
+                  <option value="novel">Other</option>
+                  <option value="novel">Novel</option>
+                </select>
+              </div>
+              <div class="addCategory-panel-row">
+                <label>Sub Category</label>
                 <input type="text" class="">
               </div>
               <div class="addCategory-panel-row">

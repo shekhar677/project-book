@@ -69,13 +69,17 @@
 
       <!-- MAIN-CONTENT -->
       <div class="main-content">
+
         <div class="state-group">
           <p class="tag">States</p>
+          <div class="addNewData">
+            <a onclick="openModalStates();" class="allow">Add new State</a>
+          </div>
           <div class="list-items">
             <div class="list-items-inner ad-shadow">
               <p>Uttar Pradesh</p>
               <div class="recent-ad-options">
-                <a onclick="openModal();" class="allow">Edit</a>
+                <a onclick="openModalStates();" class="allow">Edit</a>
                 <button class="block">Delete</button>
               </div>
             </div>
@@ -83,7 +87,7 @@
             <div class="list-items-inner ad-shadow">
               <p>Uttar Pradesh</p>
               <div class="recent-ad-options">
-                <a onclick="openModal();" class="allow">Edit</a>
+                <a onclick="openModalStates();" class="allow">Edit</a>
                 <button class="block">Delete</button>
               </div>
             </div>
@@ -91,7 +95,7 @@
             <div class="list-items-inner ad-shadow">
               <p>Uttar Pradesh</p>
               <div class="recent-ad-options">
-                <a onclick="openModal();" class="allow">Edit</a>
+                <a onclick="openModalStates();" class="allow">Edit</a>
                 <button class="block">Delete</button>
               </div>
             </div>
@@ -99,7 +103,7 @@
             <div class="list-items-inner ad-shadow">
               <p>Uttar Pradesh</p>
               <div class="recent-ad-options">
-                <a onclick="openModal();" class="allow">Edit</a>
+                <a onclick="openModalStates();" class="allow">Edit</a>
                 <button class="block">Delete</button>
               </div>
             </div>
@@ -107,7 +111,7 @@
             <div class="list-items-inner ad-shadow">
               <p>Uttar Pradesh</p>
               <div class="recent-ad-options">
-                <a onclick="openModal();" class="allow">Edit</a>
+                <a onclick="openModalStates();" class="allow">Edit</a>
                 <button class="block">Delete</button>
               </div>
             </div>
@@ -117,11 +121,14 @@
 
         <div class="city-group">
           <p class="tag">Cities</p>
+          <div class="addNewData">
+            <a onclick="openModalCity();" class="allow">Add new City</a>
+          </div>
           <div class="list-items">
             <div class="list-items-inner ad-shadow">
               <p>Lucknow</p>
               <div class="recent-ad-options">
-                <a onclick="openModal();" class="allow">Edit</a>
+                <a onclick="openModalCity();" class="allow">Edit</a>
                 <button class="block">Delete</button>
               </div>
             </div>
@@ -129,7 +136,7 @@
             <div class="list-items-inner ad-shadow">
               <p>Varanasi</p>
               <div class="recent-ad-options">
-                <a onclick="openModal();" class="allow">Edit</a>
+                <a onclick="openModalCity();" class="allow">Edit</a>
                 <button class="block">Delete</button>
               </div>
             </div>
@@ -137,7 +144,7 @@
             <div class="list-items-inner ad-shadow">
               <p>Gorakhpur</p>
               <div class="recent-ad-options">
-                <a onclick="openModal();" class="allow">Edit</a>
+                <a onclick="openModalCity();" class="allow">Edit</a>
                 <button class="block">Delete</button>
               </div>
             </div>
@@ -145,7 +152,7 @@
             <div class="list-items-inner ad-shadow">
               <p>Lucknow</p>
               <div class="recent-ad-options">
-                <a onclick="openModal();" class="allow">Edit</a>
+                <a onclick="openModalCity();" class="allow">Edit</a>
                 <button class="block">Delete</button>
               </div>
             </div>
@@ -153,7 +160,7 @@
             <div class="list-items-inner ad-shadow">
               <p>Varanasi</p>
               <div class="recent-ad-options">
-                <a onclick="openModal();" class="allow">Edit</a>
+                <a onclick="openModalCity();" class="allow">Edit</a>
                 <button class="block">Delete</button>
               </div>
             </div>
@@ -161,13 +168,38 @@
           </div>
         </div>
 
-        <!-- modal for editing states & city -->
-        <div id="modal">
+        <!-- modal for editing states -->
+        <div id="modalStates">
           <div class="modal-content">
-            <span id="closeBtn">&times;</span>
+            <span id="closeBtn" onclick="closeModalStates();">&times;</span>
             <form action="#submit-changes" method="post">
               <div class="addCategory-panel-row">
-                <label>Edit</label>
+                <label>State</label>
+                <input type="text" class="">
+              </div>
+              <div class="addCategory-panel-row">
+                <button class="input-btn" type="submit" name="button">Update</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- modal for editing city -->
+        <div id="modalCity">
+          <div class="modal-content">
+            <span id="closeBtn" onclick="closeModalCity();">&times;</span>
+            <form action="#submit-changes" method="post">
+              <div class="addCategory-panel-row">
+                <label>State</label>
+                <select name="" class="input-type">
+                  <option value="novel" selected>Enginnering</option>
+                  <option value="novel">Management</option>
+                  <option value="novel">Other</option>
+                  <option value="novel">Novel</option>
+                </select>
+              </div>
+              <div class="addCategory-panel-row">
+                <label>City</label>
                 <input type="text" class="">
               </div>
               <div class="addCategory-panel-row">
@@ -200,18 +232,27 @@
     });
 
     // code for modal...............
-    var modal = document.getElementById('modal');
-    var closeBtn = document.getElementById('closeBtn');
+    var modalCity = document.getElementById('modalCity');
+    var modalStates = document.getElementById('modalStates');
+    // var closeBtn = document.getElementById('closeBtn');
 
-    closeBtn.addEventListener('click', closeModal);
+    // closeBtn.addEventListener('click', closeModal);
     // open modal function
-    function openModal() {
+    function openModalCity() {
       console.log('Open clicked');
-      modal.style.display = 'block';
+      modalCity.style.display = 'block';
+    }
+    function openModalStates() {
+      console.log('Open clicked');
+      modalStates.style.display = 'block';
     }
     //close modal function
-    function closeModal() {
-      modal.style.display = 'none';
+    function closeModalCity() {
+      modalCity.style.display = 'none';
+      console.log('Close clicked');
+    }
+    function closeModalStates() {
+      modalStates.style.display = 'none';
       console.log('Close clicked');
     }
   </script>
