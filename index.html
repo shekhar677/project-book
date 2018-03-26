@@ -43,6 +43,7 @@
     </div>
     <!-- branding ends -->
 
+    
     <section id="header-top">
       <div class="overlay"></div>
       <div class="nav vertical-center">
@@ -53,6 +54,16 @@
         <!-- tagline ends -->
 
         <div class="search">
+          <div class="select-container">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            <select class="select search-default" name="">
+              <option value="novel">Uttar Pradesh</option>
+              <option value="novel">Assam</option>
+              <option value="novel">Bihar</option>
+              <option value="novel" selected>Gujarat</option>
+              <option value="novel">Delhi</option>
+            </select>
+          </div>
           <div class="select-container">
             <i class="fa fa-map-marker" aria-hidden="true"></i>
             <select class="select search-default" name="">
@@ -227,5 +238,17 @@
       <p>&copy; 2018 | By Shekhar</p>
     </div>
   </footer>
+
+
+<!-- script for modal -->
+  <script>
+    var cityModal= document.getElementById('modal');
+    cityModal.addEventListener('click', openModal);
+
+    // open modal function
+    function openModal() {
+
+    }
+  </script>
   </body>
 </html>

@@ -79,16 +79,21 @@ section#header-top .nav div.tagline p {
   font-size: 1.3rem;
   font-weight: 200;
 }
-section#header-top .nav .search {
+.search {
   text-align: center;
   width: 100%;
 }
-section#header-top .nav .search .select-container {
+.search .select-container {
   display: inline-block;
   background: #fff;
   padding-left: 11px;
   color: var(--font-color);
   border: 1px solid #fff;
+}
+
+
+.location, .control {
+  display: inline-block;
 }
 .select-container i {
   color: var(--h1-color);
@@ -109,6 +114,7 @@ section#header-top .nav .search a i {
 #categories {
   background: #fff;
   position: relative;
+  z-index: 1;
   top: -55px;
   border-radius: 5px 5px 0 0;
   width: 90%;
@@ -212,6 +218,25 @@ section#recent .content .pagination ul li {
     font-size: 0.9rem;
     padding: 10px 12px;
   }
+  section#header-top .nav .search .select {
+    width: 90%;
+  }
+  .search {
+    width: 70%;
+    margin: auto;
+  }
+  .search .select-container {
+    margin-bottom: 5px;
+  }
+  .select-container {
+    width: 49%;
+  }
+  section#header-top .nav .search input[type="text"] {
+    width: 78%;
+  }
+  section#header-top .btn {
+    width: 20%;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -293,9 +318,10 @@ section#recent .content .pagination ul li {
     display: block;
     width: 70%;
     margin: auto;
+    margin-bottom: 5px;
   }
   section#header-top .nav .search .select {
-    width: 95%;
+    width: 90%;
   }
   section#header-top .nav .search input[type="text"] {
     width: 70%;
@@ -309,6 +335,9 @@ section#recent .content .pagination ul li {
   }
   section#recent .content .box {
     width: 40%;
+  }
+  .search {
+    width: 90%;
   }
 
 }
